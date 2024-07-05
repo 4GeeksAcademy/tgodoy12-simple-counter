@@ -6,8 +6,29 @@ import ReactDOM from "react-dom/client";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import Contador from "./component/contador.jsx";
 
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
+
+let number = 0;
+// let second2 = 0; 
+// let second3 = 0;
+
+
+let numeroIntervalo = setInterval(function() {
+    number++;
+
+
+    // if(second === 9) {
+    //     second = 0;
+    //     second2++;
+    // }
+    // if(second2 == 9) {
+    //     second = second2 = 0
+    //     second3++;
+    // }
+    ReactDOM.createRoot(document.getElementById('app')).render(<Contador number={number}/>)}, 100);
+
+    
+
 
