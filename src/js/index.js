@@ -18,15 +18,6 @@ let number = 0;
 let numeroIntervalo = setInterval(function() {
     number++;
 
-
-    // if(second === 9) {
-    //     second = 0;
-    //     second2++;
-    // }
-    // if(second2 == 9) {
-    //     second = second2 = 0
-    //     second3++;
-    // }
     ReactDOM.createRoot(document.getElementById('app')).render(<Contador number={number}/>)}, 100);
 
     
