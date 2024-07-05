@@ -1,6 +1,7 @@
 import React from "react";
 import Digit from "./digit";
 
+
 let Contador = ({number}) => {
     
     const one = Math.floor(number/1)%10;
@@ -16,7 +17,7 @@ let Contador = ({number}) => {
             <div className="card bg-dark">
             <div className="card-body d-flex justify-content-center">
                 
-                <Digit digit=""/>
+                <Digit digit="🕟"/>
                 <Digit digit={five}/>
                 <Digit digit={four}/>
                 <Digit digit={three}/>
